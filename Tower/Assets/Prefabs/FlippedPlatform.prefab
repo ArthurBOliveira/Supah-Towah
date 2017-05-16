@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61348882774423952}
   - component: {fileID: 50429172511535128}
   - component: {fileID: 114945799592389216}
+  - component: {fileID: 114679900449312580}
   m_Layer: 0
   m_Name: FlippedPlatform
   m_TagString: Platform
@@ -77,6 +78,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &114679900449312580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752455963843692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0947dde9d6b7ce47ac8c7a16bacbbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114945799592389216
 MonoBehaviour:
   m_ObjectHideFlags: 1
