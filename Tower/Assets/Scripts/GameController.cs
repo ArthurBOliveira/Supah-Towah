@@ -5,9 +5,11 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public GameObject platform;
+    public GameObject flippedPlatform;
     public GameObject redPlatform;
 
-    private float x;
+    public int direction;
+    public float speed = 50;
 
     private void Start()
     {
@@ -16,12 +18,32 @@ public class GameController : MonoBehaviour
 
     IEnumerator Game()
     {
+        float x;
+        float y;
         yield return new WaitForSeconds(3);
 
         while (true)
         {
-            x = Random.Range(-4.5f, 4.5f);
-            Instantiate(platform, new Vector3(x, 6, 0), Quaternion.identity);
+            switch (direction)
+            {
+                case 1:
+                    //Downward
+                    x = Random.Range(-4.5f, 4.5f);
+                    Instantiate(platform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
+                    break;
+
+                case 2:
+                    //Upward
+                    x = Random.Range(-4.5f, 4.5f);
+                    Instantiate(platform, new Vector3(x, -6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (1 * speed));
+                    break;
+
+                case 3:
+                    //Leftward
+                    y = Random.Range(-3f, 3f);
+                    Instantiate(flippedPlatform, new Vector3(8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((-1 * speed), 0);
+                    break;
+            }
 
             yield return new WaitForSeconds(1);
         }
