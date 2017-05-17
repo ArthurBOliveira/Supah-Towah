@@ -8,10 +8,7 @@ public class GameController : MonoBehaviour
     public GameObject flippedPlatform;
     public GameObject redPlatform;
 
-    public GameObject northParticle;
-    public GameObject southParticle;
-    public GameObject eastParticle;
-    public GameObject westParticle;
+    public GameObject particle;
 
     public int direction;
     public float speed = 50;
@@ -21,17 +18,13 @@ public class GameController : MonoBehaviour
         StartCoroutine(ChangeDirection());
         StartCoroutine(Game());
 
-        northParticle.GetComponent<ParticleSystem>().enableEmission = false;
-        southParticle.GetComponent<ParticleSystem>().enableEmission = false;
-        eastParticle.GetComponent<ParticleSystem>().enableEmission = false;
-        westParticle.GetComponent<ParticleSystem>().enableEmission = false;
     }
 
     IEnumerator Game()
     {
         float x;
         float y;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         while (true)
         {
@@ -61,17 +54,15 @@ public class GameController : MonoBehaviour
                     break;
             }
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
     IEnumerator ChangeDirection()
     {
-        yield return new WaitForSeconds(1);
-        
         while (true)
         {
-            direction = Random.Range(1, 4);
+            direction = Random.Range(1, 5);
             ChangeEmission();
             yield return new WaitForSeconds(8);
         }
@@ -83,33 +74,33 @@ public class GameController : MonoBehaviour
         {
             case 1:
                 //North
-                northParticle.GetComponent<ParticleSystem>().enableEmission = true;
-                southParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                eastParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                westParticle.GetComponent<ParticleSystem>().enableEmission = false;
+                ParticleSystem.VelocityOverLifetimeModule aux = particle.GetComponent<ParticleSystem>().velocityOverLifetime;
+
+                aux.x = -5;
+                aux.y = 0;
                 break;
 
             case 2:
                 //South
-                northParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                southParticle.GetComponent<ParticleSystem>().enableEmission = true;
-                eastParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                westParticle.GetComponent<ParticleSystem>().enableEmission = false;
+                ParticleSystem.VelocityOverLifetimeModule aux1 = particle.GetComponent<ParticleSystem>().velocityOverLifetime;
+
+                aux1.x = 5;
+                aux1.y = 0;
                 break;
 
             case 3:
                 //East
-                northParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                southParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                eastParticle.GetComponent<ParticleSystem>().enableEmission = true;
-                westParticle.GetComponent<ParticleSystem>().enableEmission = false;
+                ParticleSystem.VelocityOverLifetimeModule aux2 = particle.GetComponent<ParticleSystem>().velocityOverLifetime;
+
+                aux2.x = 0;
+                aux2.y = -5;
                 break;
             case 4:
                 //West
-                northParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                southParticle.GetComponent<ParticleSystem>().enableEmission = false;
-                eastParticle.GetComponent<ParticleSystem>().enableEmission = true;
-                westParticle.GetComponent<ParticleSystem>().enableEmission = false;
+                ParticleSystem.VelocityOverLifetimeModule aux3 = particle.GetComponent<ParticleSystem>().velocityOverLifetime;
+
+                aux3.x = 0;
+                aux3.y = 5;
                 break;
         }
     }

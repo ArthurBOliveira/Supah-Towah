@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public float interval = 3.0f;
+    private float timestamp = .0f;
+
+    // Use this for initialization
+    void Start()
     {
-        if (collision.gameObject.tag == "Platform")
+        timestamp = Time.time;  // save the timestamp when the bullet instantiated
+    }
+
+    void Update()
+    {
+        if (interval < Time.time - timestamp)
         {
-            Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), collision.collider);
+            Destroy(gameObject);  // destroy the bullet after {interval} seconds
         }
     }
 }
