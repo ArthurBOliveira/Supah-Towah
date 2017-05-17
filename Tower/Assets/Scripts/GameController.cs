@@ -7,14 +7,19 @@ public class GameController : MonoBehaviour
     public GameObject platform;
     public GameObject flippedPlatform;
     public GameObject redPlatform;
+    public GameObject point; 
 
     public GameObject particle;
 
     public int direction;
-    public float speed = 50;
+    public int score = 0;
+
+    public float speed = 50;    
 
     private void Start()
     {
+        score = 0;
+
         StartCoroutine(ChangeDirection());
         StartCoroutine(Game());
 
@@ -109,5 +114,7 @@ public class GameController : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag("Player").transform.position = new Vector2(0, 0);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+
+        score = 0;
     }
 }
