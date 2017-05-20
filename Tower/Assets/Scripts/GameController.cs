@@ -11,12 +11,15 @@ public class GameController : MonoBehaviour
     public GameObject redFlippedPlatform;
     public GameObject point; 
     public GameObject particle;
+    public GameObject Timer;
 
     public Text scoreText;
+    public Text timeText;
 
     public int direction;
     public int score;
 
+    public float time = 60;
     public float speed = 40;
 
     private float rate;
@@ -28,6 +31,16 @@ public class GameController : MonoBehaviour
         StartCoroutine(ChangeDirection());
         StartCoroutine(Game());
         StartCoroutine(SpawnPoints());
+    }
+
+    private void Update()
+    {
+        time -= Time.deltaTime;
+
+        int min = (int)time / 60;
+        int sec = (int)time % 60;
+
+        timeText.text = min + ":" + sec;
     }
 
     IEnumerator Game()
@@ -192,11 +205,12 @@ public class GameController : MonoBehaviour
 
     IEnumerator SpawnPoints()
     {
+        yield return new WaitForSeconds(5);
         while (true)
         {
             Vector3 screenPosition = Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0, Screen.width), Random.Range(0, Screen.height), Camera.main.farClipPlane / 2));
             Instantiate(point, screenPosition, Quaternion.identity);
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(8);
         }
     }
 
@@ -278,7 +292,7 @@ public class GameController : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").transform.position = new Vector2(0, 0);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
-        score = 0;
+        score = score / 2;
         scoreText.text = "Score: " + score;
     }
 
@@ -287,5 +301,15 @@ public class GameController : MonoBehaviour
         score += addScore;
 
         scoreText.text = "Score: " + score;
+    }
+
+    public void AddTime(int n)
+    {
+        time += n;
+
+        int min = (int)time / 60;
+        int sec = (int)time % 60;
+
+        timeText.text = min + ":" + sec;
     }
 }
