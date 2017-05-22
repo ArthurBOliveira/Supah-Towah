@@ -11,7 +11,6 @@ public class GameController : MonoBehaviour
     public GameObject redFlippedPlatform;
     public GameObject point; 
     public GameObject particle;
-    public GameObject Timer;
 
     public Text scoreText;
     public Text timeText;
