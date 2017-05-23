@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
-    public GameObject GameOverUI;
+    public GameObject GameOverUI;    
 
     private Camera cam;
     private GameController gc;
@@ -47,9 +47,9 @@ public class GameMenu : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
-    public void ReturnToMenu()
+    public void Leaderscore()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Leaderscore");
     }
 
     public void PlayGame()

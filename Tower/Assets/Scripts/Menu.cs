@@ -21,6 +21,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
+    public void Leaderscore()
+    {
+        SceneManager.LoadScene("Leaderscore");
+    }
+
     IEnumerator ChangeDirection()
     {
         while (true)
