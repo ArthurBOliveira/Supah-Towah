@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public GameObject flippedPlatform;
     public GameObject redPlatform;
     public GameObject redFlippedPlatform;
-    public GameObject point; 
+    public GameObject point;
     public GameObject particle;
 
     public Text scoreText;
@@ -22,10 +22,12 @@ public class GameController : MonoBehaviour
     public float speed = 40;
 
     private float rate;
+    private bool playing;
 
     private void Awake()
     {
         AddScore(0);
+        playing = true;
 
         StartCoroutine(ChangeDirection());
         StartCoroutine(Game());
@@ -34,12 +36,15 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        time -= Time.deltaTime;
+        if (playing)
+        {
+            time -= Time.deltaTime;
 
-        int min = (int)time / 60;
-        int sec = (int)time % 60;
+            int min = (int)time / 60;
+            int sec = (int)time % 60;
 
-        timeText.text = min + ":" + sec;
+            timeText.text = min + ":" + sec;
+        }
     }
 
     IEnumerator Game()
@@ -56,7 +61,7 @@ public class GameController : MonoBehaviour
                     //North
                     x = Random.Range(-4.5f, 4.5f);
 
-                    if(Random.Range(1, 101) < 95)
+                    if (Random.Range(1, 101) < 95)
                         Instantiate(platform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
                     else
                         Instantiate(redPlatform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
@@ -154,38 +159,38 @@ public class GameController : MonoBehaviour
                         Instantiate(redFlippedPlatform, new Vector3(-8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((1 * speed), 0);
                     }
                     break;
-                //case 9:
-                //    //North - South
-                //    x = Random.Range(-4.5f, 4.5f);
-                //    y = Random.Range(-4.5f, 4.5f);
+                    //case 9:
+                    //    //North - South
+                    //    x = Random.Range(-4.5f, 4.5f);
+                    //    y = Random.Range(-4.5f, 4.5f);
 
-                //    if (Random.Range(1, 101) < 95)
-                //    {
-                //        Instantiate(platform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (1 * speed));
-                //        Instantiate(platform, new Vector3(y, -6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
-                //    }
-                //    else
-                //    {
-                //        Instantiate(redPlatform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (1 * speed));
-                //        Instantiate(redPlatform, new Vector3(y, -6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
-                //    }
-                //    break;
-                //case 10:
-                //    //East - West
-                //    x = Random.Range(-3f, 3f);
-                //    y = Random.Range(-3f, 3f);
+                    //    if (Random.Range(1, 101) < 95)
+                    //    {
+                    //        Instantiate(platform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (1 * speed));
+                    //        Instantiate(platform, new Vector3(y, -6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
+                    //    }
+                    //    else
+                    //    {
+                    //        Instantiate(redPlatform, new Vector3(x, 6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (1 * speed));
+                    //        Instantiate(redPlatform, new Vector3(y, -6, 0), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, (-1 * speed));
+                    //    }
+                    //    break;
+                    //case 10:
+                    //    //East - West
+                    //    x = Random.Range(-3f, 3f);
+                    //    y = Random.Range(-3f, 3f);
 
-                //    if (Random.Range(1, 101) < 95)
-                //    {
-                //        Instantiate(flippedPlatform, new Vector3(8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((-1 * speed), 0);
-                //        Instantiate(flippedPlatform, new Vector3(-8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((1 * speed), 0);
-                //    }
-                //    else
-                //    {
-                //        Instantiate(redFlippedPlatform, new Vector3(8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((-1 * speed), 0);
-                //        Instantiate(redFlippedPlatform, new Vector3(-8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((1 * speed), 0);
-                //    }
-                //    break;
+                    //    if (Random.Range(1, 101) < 95)
+                    //    {
+                    //        Instantiate(flippedPlatform, new Vector3(8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((-1 * speed), 0);
+                    //        Instantiate(flippedPlatform, new Vector3(-8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((1 * speed), 0);
+                    //    }
+                    //    else
+                    //    {
+                    //        Instantiate(redFlippedPlatform, new Vector3(8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((-1 * speed), 0);
+                    //        Instantiate(redFlippedPlatform, new Vector3(-8, y, 0), flippedPlatform.transform.rotation).GetComponent<Rigidbody2D>().velocity = new Vector2((1 * speed), 0);
+                    //    }
+                    //    break;
             }
 
             yield return new WaitForSeconds(rate);
@@ -310,5 +315,14 @@ public class GameController : MonoBehaviour
         int sec = (int)time % 60;
 
         timeText.text = min + ":" + sec;
+    }
+
+    public void StopCourotines()
+    {
+        playing = false;
+
+        StopCoroutine(ChangeDirection());
+        StopCoroutine(Game());
+        StopCoroutine(SpawnPoints());
     }
 }

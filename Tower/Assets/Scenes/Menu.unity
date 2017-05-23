@@ -3549,50 +3549,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &669007163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 669007165}
-  - component: {fileID: 669007164}
-  m_Layer: 0
-  m_Name: Newgrounds.io Object
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &669007164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669007163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6616b8c87d04be4f960999acd630a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  app_id: 46068:F8ZWSIpI
-  session_id: 693665
-  aes_base64_key: 0v3TXkrKOW2PuvcoX7siSf9mx2quPxBL
-  output_network_data: 0
---- !u!4 &669007165
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669007163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917218351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,8 +3896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle: {fileID: 400113424}
-  ngio_core: {fileID: 669007164}
-  leaderboardId: 7664
+  ngio_core: {fileID: 0}
 --- !u!1 &2063582917
 GameObject:
   m_ObjectHideFlags: 0

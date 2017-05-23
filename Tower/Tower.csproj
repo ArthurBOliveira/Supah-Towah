@@ -12,7 +12,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
@@ -27,7 +27,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_IL2CPP;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -37,7 +37,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_IL2CPP;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -82,11 +82,11 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -100,42 +100,6 @@
     <Compile Include="Assets\Scripts\Save.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\VirtualJoystick.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\SimpleJSON\JObject.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\SimpleJSON\JSONDecoder.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\SimpleJSON\JSONEncoder.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\SimpleJSON\JSONStreamEncoder.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\SimpleJSON\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\SessionLoader.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\SimpleJSONImportable.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\callModel.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\App.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\Event.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\Gateway.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\Loader.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\Medal.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\components\ScoreBoard.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\core.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\model.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\ngCrypto.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\call.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\debug.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\error.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\input.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\medal.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\output.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\result.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\score.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\scoreboard.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\session.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\user.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\objects\usericons.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\resultModel.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\App.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\Event.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\Gateway.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\Loader.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\Medal.cs" />
-    <Compile Include="Assets\newgrounds-newgrounds.io-for-unity-c-648741192e79\Assets\io\newgrounds\results\ScoreBoard.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
